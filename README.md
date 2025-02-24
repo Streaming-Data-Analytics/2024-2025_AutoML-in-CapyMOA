@@ -16,7 +16,6 @@ CapyMOA already includes AutoML capabilities, but there are alternative approach
   - Bandit Classifier: multi-armed bandit-based strategy to dynamically select the best model at each received instance.
 - Integrate these two approaches into CapyMOA and create an AutoML suite.
 - Compare the new implementations with the AutoML tools already present in CapyMOA.
-- Analyze performance in terms of accuracy, computational efficiency, and adaptability to changes in the data.
 
 ## Deliverable
 At the end of the project, the student should deliver:
