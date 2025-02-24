@@ -25,6 +25,6 @@ At the end of the project, the student should deliver:
   - Implementation of the new model selection methods in CapyMOA.
   - Comparison of different approaches.
 
-This project will help improve the capabilities of AutoML in CapyMOA by exploring new strategies for automatic pattern selection and providing a comparison with existing techniques.
+This project will help improve the capabilities of AutoML in CapyMOA by exploring new strategies for automatic model selection.
 
 
