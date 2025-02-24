@@ -11,7 +11,7 @@ CapyMOA already includes AutoML capabilities, but there are alternative approach
 
 ## Goals and objectives
 - Reproduce the AutoML notebook of CapyMOA to understand the current functionality of the library.
-- Implement in CapyMOA two AutoML classes present in River:
+- Implement in CapyMOA two model selection methods present in River:
   - Successive Halving Classifier: progressive selection of the best model by iteratively eliminating those with inferior performance.
   - Bandit Classifier: multi-armed bandit-based strategy to dynamically select the best model at each received instance.
 - Integrate these two approaches into CapyMOA and create an AutoML suite.
@@ -23,7 +23,7 @@ At the end of the project, the student should deliver:
 - Report with explanation of methodology, analysis of results, and comparison with existing implementations.
 - Notebook with:
   - Reproduction of the CapyMOA AutoML notebook.
-  - Implementation of the new AutoML classes in CapyMOA.
+  - Implementation of the new model selection methods in CapyMOA.
   - Comparison of different approaches.
 
 This project will help improve the capabilities of AutoML in CapyMOA by exploring new strategies for automatic pattern selection and providing a comparison with existing techniques.
