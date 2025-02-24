@@ -5,42 +5,27 @@ Optional project of the [Streaming Data Analytics](http://emanueledellavalle.org
 Student: **[To be assigned]**
 
 ## Background
-Streaming Machine Learning is a paradigm for processing data in real time, continuously adapting the model to new information. This approach is particularly useful in scenarios where data arrive in continuous streams and it is not practical or possible to re-train the model on the entire accumulated dataset.
+Automated Machine Learning (AutoML) is a fast-growing area that aims to automate the selection and optimization of machine learning models. In Streaming Machine Learning (SML), AutoML becomes even more crucial, as models must continuously adapt to incoming data without the possibility of extensive retraining.
 
-CapyMOA is a recent library for Streaming Machine Learning based on MOA (Massive Online Analysis), which proposes an optimized implementation of several online learning algorithms. Another popular library for Streaming Machine Learning is River, which offers a range of algorithms and tools for stream data analysis.
-
-This project aims to reproduce the tutorial notebooks of CapyMOA and compare their temporal performance with similar implementations in River, to evaluate the actual optimization proposed by the authors of CapyMOA.
+CapyMOA already includes AutoML capabilities, but there are alternative approaches implemented in River that could enrich the framework. This project aims to integrate two automatic model selection methods into CapyMOA: Successive Halving Classifier and Bandit Classifier.
 
 ## Goals and objectives
-- Reproduce CapyMOA tutorial notebooks to understand how the library works.
-- Compare the time performance of some parts of the CapyMOA code with the same features implemented in River.
-- Analyze not only the execution speed, but also predictive performance and computational costs (e.g., CPU/RAM usage).
-- Check whether time optimization in CapyMOA resulted in sacrifices in accuracy or computational efficiency.
-- Identify any features present in River but absent in CapyMOA, suggesting possible motivated improvements to the library.
-
-## Datasets
-To ensure a fair comparison between the two libraries, standard datasets for Streaming Machine Learning will be used. Some suggested datasets are:
-- *Electricity:* a classification problem based on the Australian New South Wales Electricity Market
-- *Covertype:* it contains the forest cover type for 30 x 30 meter cells obtained from US Forest Service (USFS) Region 2 Resource Information System (RIS) data.
-- *Fried:* a regression problem based on the Friedman dataset.
-- *Synthetic datasets:* artificially generated datasets to evaluate specific aspects of streaming learning algorithms.
-
-## Evaluation metrics
-The metrics used for comparison will be:
-- *Run-time:* measurement of the time required to complete training and prediction.
-- *Performance metrics:* to assess the quality of the model.
-- *Memory Utilization:* amount of RAM required during execution.
-- *CPU Utilization:* computational load generated.
+- Reproduce the AutoML notebook of CapyMOA to understand the current functionality of the library.
+- Implement in CapyMOA two AutoML classes present in River:
+  - Successive Halving Classifier: progressive selection of the best model by iteratively eliminating those with inferior performance.
+  - Bandit Classifier: multi-armed bandit-based strategy to dynamically select the best model at each received instance.
+- Integrate these two approaches into CapyMOA and create an AutoML suite.
+- Compare the new implementations with the AutoML tools already present in CapyMOA.
+- Analyze performance in terms of accuracy, computational efficiency, and adaptability to changes in the data.
 
 ## Deliverable
 At the end of the project, the student should deliver:
-- Notebooks containing:
-  - A reproduction of the CapyMOA tutorials.
-  - Comparison with implementations in River.
-  - Analysis of performance and computational costs.
-- A section with proposals for features that could be added to CapyMOA, taking inspiration from River.
+- Report with explanation of methodology, analysis of results, and comparison with existing implementations.
+- Notebook with:
+  - Reproduction of the CapyMOA AutoML notebook.
+  - Implementation of the new AutoML classes in CapyMOA.
+  - Comparison of different approaches.
 
-The project will help to understand the advantages and limitations of CapyMOA compared to an established library such as River, providing concrete data on their differences in performance and scalability.
-
+This project will help improve the capabilities of AutoML in CapyMOA by exploring new strategies for automatic pattern selection and providing a comparison with existing techniques.
 
 
