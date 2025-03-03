@@ -27,4 +27,10 @@ At the end of the project, the student should deliver:
 
 This project will help improve the capabilities of AutoML in CapyMOA by exploring new strategies for automatic model selection.
 
-
+## Note for Students
+- Clone the created repository offline;
+- Add your name and surname into the Readme file;
+- Make any changes to your repository, according to the specific assignment;
+- Add a requirement.txt file for code reproducibility and instructions on how to replicate the results;
+- Commit your changes to your local repository;
+- Push your changes to your online repository.
