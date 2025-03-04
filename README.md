@@ -7,14 +7,14 @@ Student: **[To be assigned]**
 ## Background
 Automated Machine Learning (AutoML) is a fast-growing area that aims to automate the selection and optimization of machine learning models. In Streaming Machine Learning (SML), AutoML becomes even more crucial, as models must continuously adapt to incoming data without the possibility of extensive retraining.
 
-CapyMOA already includes AutoML capabilities, but there are alternative approaches implemented in River that could enrich the framework. This project aims to integrate two automatic model selection methods into CapyMOA: Successive Halving Classifier and Bandit Classifier.
+CapyMOA already includes AutoML capabilities, but there are alternative approaches implemented in River that could enrich the framework. This project aims to integrate one of two automatic model selection methods into CapyMOA, i.e., Successive Halving Classifier or Bandit Classifier.
 
 ## Goals and objectives
-- Reproduce the AutoML notebook of CapyMOA to understand the current functionality of the library.
-- Implement in CapyMOA two model selection methods present in River:
-  - Successive Halving Classifier: progressive selection of the best model by iteratively eliminating those with inferior performance.
-  - Bandit Classifier: multi-armed bandit-based strategy to dynamically select the best model at each received instance.
-- Integrate these two approaches into CapyMOA and create an AutoML suite.
+- Reproduce the [AutoML notebook](https://capymoa.org/notebooks/09_automl.html) of CapyMOA to understand the current functionality of the library.
+- Implement in CapyMOA one of the following two model selection methods present in River:
+  - [Successive Halving Classifier](https://riverml.xyz/0.22.0/api/model-selection/SuccessiveHalvingClassifier/): progressive selection of the best model by iteratively eliminating those with inferior performance.
+  - [Bandit Classifier](https://riverml.xyz/0.22.0/api/model-selection/BanditClassifier/): multi-armed bandit-based strategy to dynamically select the best model at each received instance.
+- Integrate the selcted approach into CapyMOA, using the same testing framework of the AutoML notebook.
 - Compare the new implementations with the AutoML tools already present in CapyMOA.
 
 ## Deliverable
