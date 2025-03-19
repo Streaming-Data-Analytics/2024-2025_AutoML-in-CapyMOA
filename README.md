@@ -14,7 +14,7 @@ CapyMOA already includes AutoML capabilities, but there are alternative approach
 - Implement in CapyMOA one of the following two model selection methods present in River:
   - [Successive Halving Classifier](https://riverml.xyz/0.22.0/api/model-selection/SuccessiveHalvingClassifier/): progressive selection of the best model by iteratively eliminating those with inferior performance.
   - [Bandit Classifier](https://riverml.xyz/0.22.0/api/model-selection/BanditClassifier/): multi-armed bandit-based strategy to dynamically select the best model at each received instance.
-- Integrate the selcted approach into CapyMOA, using the same testing framework of the AutoML notebook.
+- Integrate the selected approach into CapyMOA, using the same testing framework of the AutoML notebook.
 - Compare the new implementations with the AutoML tools already present in CapyMOA.
 
 ## Deliverable
